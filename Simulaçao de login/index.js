@@ -24,10 +24,8 @@ registroButton.addEventListener("click", () => {
   cadastro.classList.remove("hidden");
 });
 
-buttonCadastro.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  let dadoNome = document.querySelector(".NomeInput").value;
+buttonCadastro.addEventListener("click", (event) => {
+  let dadoNome = document.querySelector(".nomeInput").value;
   let dadoEmail = document.querySelector(".emailInput").value;
   let dadoDataDeNascimento = document.querySelector(".dataInput").value;
   let dadoSenha = document.querySelector(".senhaInput").value;
@@ -40,7 +38,6 @@ buttonCadastro.addEventListener("submit", (event) => {
 });
 
 buttonEntrar.addEventListener("click", (event) => {
-  event.preventDefault();
   let loginEmail = document.querySelector(".inputLoginEmail").value;
   let loginSenha = document.querySelector(".inputLoginSenha").value;
   if (arrayCadastros) {

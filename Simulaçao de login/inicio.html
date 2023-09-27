@@ -15,8 +15,7 @@
       <span class="cadastro">cadastre-se</span>
       <br />
       <span class="login"> login </span>
-
-      <form id="formLogin">
+      <div id="formLogin">
         <p>Faça login para acessar sua conta</p>
 
         <label for="inputLogin">Email:</label
@@ -25,14 +24,14 @@
         <label for="inputLoginSenha">Senha :</label>
 
         <input type="password" class="inputLoginSenha" />
+
         <div id="senhaInvalida">
           <p id="senhaInvalidaMensagem">teste</p>
         </div>
 
         <button id="botaoLogin">entrar</button>
-      </form>
-
-      <form id="formCadastro" class="formCadastro hidden">
+      </div>
+      <div id="formCadastro" class="hidden">
         <label for="nomeInput"> Nome completo : </label
         ><input type="text" class="nomeInput" />
         <label for="emailInput">Email :</label
@@ -43,8 +42,8 @@
         ><input type="password" class="senhaInput" />
         <label for="confirmarSenha">confirmar Senha</label>
         <input type="password" class="confirmarSenha" />
-        <button type="submit" class="botaoCadastro">Finalizar cadastro</button>
-      </form>
+        <button class="botaoCadastro">Finalizar cadastro</button>
+      </div>
     </section>
 
     <script type="module" src="index.js"></script>
