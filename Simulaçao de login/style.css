@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+#senhaInvalida {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0% 21%;
+    color: red;
+}

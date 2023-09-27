@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>crie uma conta para ter acesso a pagina</h1>
+    </header>
+
+    <section id="section">
+      <span class="cadastro">cadastre-se</span>
+      <br />
+      <span class="login"> login </span>
+
+      <form id="formLogin">
+        <p>Faça login para acessar sua conta</p>
+
+        <label for="inputLogin">Email:</label
+        ><input type="text" class="inputLoginEmail" />
+
+        <label for="inputLoginSenha">Senha :</label>
+
+        <input type="password" class="inputLoginSenha" />
+        <div id="senhaInvalida">
+          <p id="senhaInvalidaMensagem">teste</p>
+        </div>
+
+        <button id="botãoLogin">entrar</button>
+      </form>
+
+      <form id="formCadastro" class="formCadastro hidden">
+        <label for="nomeInput"> Nome completo : </label
+        ><input type="text" class="nomeInput" />
+        <label for="emailInput">Email :</label
+        ><input type="email" class="emailInput" />
+        <label for="dataInput">Data de nascimento:</label>
+        <input type="date" class="dataInput" />
+        <label for="senhaInput">Senha:</label
+        ><input type="password" class="senhaInput" />
+        <label for="confirmarSenha">confirmar Senha</label>
+        <input type="password" class="confirmarSenha" />
+        <button type="submit" class="botaoCadastro">Finalizar cadastro</button>
+      </form>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
