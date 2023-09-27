@@ -41,18 +41,18 @@ buttonCadastro.addEventListener("submit", (event) => {
 
 buttonEntrar.addEventListener("click", (event) => {
   event.preventDefault();
-
   let loginEmail = document.querySelector(".inputLoginEmail").value;
   let loginSenha = document.querySelector(".inputLoginSenha").value;
-
-  arrayCadastros.forEach((elementoArray) => {
-    if (
-      elementoArray.email === loginEmail &&
-      elementoArray.senha === loginSenha
-    ) {
-      console.log("voce entrou :D");
-    } else {
-      ("acesso negado! D:");
-    }
-  });
+  if (arrayCadastros) {
+    arrayCadastros.forEach((elementoArray) => {
+      if (
+        elementoArray.email === loginEmail &&
+        elementoArray.senha === loginSenha
+      ) {
+        console.log("voce entrou :D");
+      } else {
+        ("acesso negado! D:");
+      }
+    });
+  }
 });
