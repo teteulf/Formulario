@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,43 +7,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>crie uma conta para ter acesso a pagina</h1>
-    </header>
+    <header></header>
 
     <section id="section">
-      <span class="cadastro">cadastre-se</span>
-      <br />
-      <span class="login"> login </span>
-      <div id="formLogin">
-        <p>Faça login para acessar sua conta</p>
+      <span class="login"></span>
+      <div class="formLogin">
+        <div id="formLoginEmail">
+          <h1 class="tituloLogin">SIGN-IN</h1>
+          <br />
 
-        <label for="inputLogin">Email:</label
-        ><input type="text" class="inputLoginEmail" />
+          <p id="dadosInvalidos"></p>
 
-        <label for="inputLoginSenha">Senha :</label>
+          <input type="text" class="inputLoginEmail" placeholder="Email" />
+          <img
+            src="assets/envelope-regular-24 (1).png"
+            id="imagemEnvelope"
+            alt="imagem_envelope"
+          />
+        </div>
 
-        <input type="password" class="inputLoginSenha" />
+        <div id="formLoginSenha">
+          <input
+            type="password"
+            class="inputLoginSenha"
+            placeholder="Password"
+          />
+          <img
+            src="assets/olho-vermelho.png"
+            id="imagemOlho"
+            alt="imagem_olho"
+          />
+        </div>
 
-        <div id="senhaInvalida">
-          <p id="senhaInvalidaMensagem">teste</p>
+        <div id="#mensagemDeCadastro">
+          Don't have an account ? <span class="cadastro">Register</span>
         </div>
 
         <button id="botaoLogin">entrar</button>
       </div>
       <div id="formCadastro" class="hidden">
-        <label for="nomeInput"> Nome completo : </label
-        ><input type="text" class="nomeInput" />
-        <label for="emailInput">Email :</label
-        ><input type="email" class="emailInput" />
-        <label for="dataInput">Data de nascimento:</label>
-        <input type="date" class="dataInput" />
-        <label for="senhaInput">Senha:</label
-        ><input type="password" class="senhaInput" />
-        <label for="confirmarSenha">confirmar Senha</label>
-        <input type="password" class="confirmarSenha" />
+        <input type="text" class="nomeInput" placeholder="Complete Name" />
+        <input type="email" class="emailInput" placeholder="Email" />
+
+        <input type="date" class="dataInput" placeholder="Data de nascimento" />
+
+        <input type="password" class="senhaInput" placeholder="Password" />
+
+        <input
+          type="password"
+          id="confirmarSenha"
+          placeholder="Confirm password"
+        />
         <button class="botaoCadastro">Finalizar cadastro</button>
       </div>
+      <p id="senhaIncompativel"></p>
     </section>
 
     <script type="module" src="index.js"></script>
