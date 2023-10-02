@@ -100,7 +100,7 @@ body {
 
     background-image: url(assets/GIF.gif);
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -140,6 +140,8 @@ body {
     box-sizing: 0 0 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     font-family: 'Inclusive Sans', sans-serif;
+    transition: opacity 3s ease-in-out;
+    opacity: 1;
 
 }
 
@@ -227,6 +229,8 @@ input::placeholder {
     flex-direction: column;
     gap: 30px;
     padding-top: 15%;
+    transition: opacity 3s ease-in-out;
+    opacity: 1;
 }
 
 #formLoginSenha {
@@ -303,57 +307,38 @@ input::placeholder {
 
 .formCadastro {
     position: absolute;
-    padding-top: 10%;
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     transition: opacity 3s ease-in-out;
     opacity: 1;
     width: 200px;
     outline: none;
-}
 
-.nomeInput {
-    height: 28px;
-    border-radius: 20px;
-    border: none;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    outline: none;
-}
-
-.emailInput {
-    height: 28px;
-    border-radius: 20px;
-    border: none;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    outline: none;
-}
-
-.dataInput {
-    height: 28px;
-    border-radius: 20px;
-    border: none;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    outline: none;
-}
-
-.senhaInput {
-    height: 28px;
-    border-radius: 20px;
-    border: none;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    outline: none;
 }
 
 #confirmarSenha {
+    padding-left: 8%;
     height: 28px;
     border-radius: 20px;
     border: none;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     outline: none;
+}
+
+.input {
+
+    padding-left: 8%;
+    height: 28px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+
+
+
+
 }

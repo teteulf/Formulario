@@ -16,6 +16,7 @@ const dadoSenha = document.querySelector(".senhaInput");
 const dadoConfirmarSenha = document.querySelector("#confirmarSenha");
 const imagemOlho = document.querySelector("#imagemOlho");
 const inputSenha = document.querySelector(".inputLoginSenha");
+const sectionSize = document.querySelector("#section");
 
 dadoConfirmarSenha.addEventListener("input", (event) => {
   verificaSenha(event);
@@ -30,6 +31,8 @@ registroButton.addEventListener("click", () => {
   cadastro.classList.remove("hidden");
   loginForm.classList.remove("formLogin");
   cadastro.classList.add("formCadastro");
+
+  sectionSize.style.height = "400px";
 });
 
 buttonCadastro.addEventListener("click", (event) => {
@@ -50,6 +53,10 @@ buttonCadastro.addEventListener("click", (event) => {
 
   desapareceLogin(loginForm, cadastro);
 
+  sectionSize.style.height = "340px";
+
+  dadosInvalidos.innerText = "";
+
   console.log(arrayCadastros);
 });
 
@@ -68,7 +75,7 @@ buttonEntrar.addEventListener("click", (event) => {
         console.log("voce entrou :D");
         dadosInvalidos.innerText = "";
       } else {
-        dadosInvalidos.innerText = "Dados inválidos";
+        dadosInvalidos.innerText = "*Dados inválidos*";
       }
     });
   }

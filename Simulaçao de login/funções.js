@@ -2,6 +2,7 @@ function desapareceLogin(loginForm, cadastro) {
   loginForm.classList.remove("hidden");
   cadastro.classList.add("hidden");
   loginForm.classList.add("formLogin");
+  cadastro.classList.remove("formCadastro");
 }
 
 const dadoSenha = document.querySelector(".senhaInput");
